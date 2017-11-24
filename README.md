@@ -1,5 +1,5 @@
 # creditcardvalidator
-credit card validator and generator 
+Credit Card validator and Generator 
 
 In my python class, we were asked to create a program that could validate credit card numbers.
 
