@@ -1,0 +1,65 @@
+# ex 1
+
+def prime(number):
+
+	# number=int(input("enter a number"))
+
+	for i in range(2,number):
+		if number>1 and  number % i !=0:
+				print(number + "is a prime number")
+		else:
+			print(number + "is not a prime number")
+prime(6)
+
+# ex 2 - need help
+
+def palindromes():
+	word=input("enter word")
+
+	for i in range(len(word)/2):
+		if word[i] != word[-(i+1)]:
+			print("not a palindrome")
+		else:
+			print("palindrome")
+
+palindromes()
+
+# ex 3 - need help, also ask to explain the ticks
+
+def anagram():
+	word1=input("word 1?")
+	word2=input("word 2?")
+
+	if ''.join(sorted(word1.lower()))==''.join(sorted(word2.lower(c))):
+		print ("yes anagram")
+		return True
+
+	else:
+		print("not anagram")
+		return False
+
+
+anagram()
+
+# ex 4 - do we need to close everytime?  Examples online do not.
+
+def encrypt(message):
+	message=input("Enter message to be encrypted")
+	shiftvalue=input("Enter shift value")
+	encryptedmessage=""
+
+	for character in message:
+		x = ord(character) -97
+		x += shiftvalue
+		encryptedmessage += chr(x)
+
+	print (encryptedmessage)
+encrypt ()
+
+
+
+# ex 5
+
+
+
+
